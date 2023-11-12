@@ -54,11 +54,11 @@ body {
 
 @media (650px <=width <= 1000px) {
     .main_container {
-        width: 30vw;
+        width: 70vw;
     }
 
     .btn {
-        width: 6vw;
+        width: 15vw;
     }
 }
 
