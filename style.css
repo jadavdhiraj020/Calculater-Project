@@ -1,10 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
 }
-body{
+
+body {
     font-size: 2.5rem;
     color: #ccc;
     height: 100%;
@@ -13,35 +14,71 @@ body{
     align-items: center;
     justify-content: center;
 }
+
 .main_container {
+    height: 80vh;
     width: 25vw;
-    margin: 5vh 2vw;
+    margin-top: 50px;
     border: 2px solid #ccc;
     border-radius: 12px;
     overflow: hidden;
     background-color: rgba(140, 218, 218, 0.3);
 }
+
 .display {
     height: 7.5vh;
     width: 100%;
     display: flex;
     align-items: end;
     justify-content: end;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(21, 20, 20);
 }
+
 .btn_container {
+    height: 65vh;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    margin: 2vh 1vh;
 }
+
 .btn {
     font-size: 1.5rem;
-    width: 70px;
-    height: 70px;
+    height: 10vh;
+    width: 5vw;
     border-radius: 15px;
     cursor: pointer;
-    margin: 5px;
     box-shadow: 4px 2px 3px rgba(0, 255, 255, 0.3);
 }
+
+@media (650px <=width <= 1000px) {
+    .main_container {
+        width: 30vw;
+    }
+
+    .btn {
+        width: 6vw;
+    }
+}
+
+@media (500px <=width <= 649px) {
+    .main_container {
+        width: 35vw;
+    }
+
+    .btn {
+        height: 8vh;
+        width: 7vw;
+    }
+}
+
+@media (0 <=width <= 500px) {
+    .main_container {
+        width: 50vw;
+    }
+
+    .btn {
+        width: 10vw;
+    }
+} 
